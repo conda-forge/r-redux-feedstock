@@ -1,11 +1,22 @@
+About r-redux-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-redux-feedstock/blob/main/LICENSE.txt)
+
 About r-redux
-=============
+-------------
 
 Home: https://github.com/richfitz/redux
 
 Package license: GPL-2.0-only
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-redux-feedstock/blob/main/LICENSE.txt)
+Summary: A 'hiredis' wrapper that includes support for transactions, pipelining, blocking subscription, serialisation of all keys and values, 'Redis' error handling with R errors. Includes an automatically generated 'R6' interface to the full 'hiredis' API.  Generated functions are faithful to the 'hiredis' documentation while attempting to match R's argument semantics.  Serialisation must be explicitly done by the user, but both binary and text-mode serialisation is supported.
+About r-redux
+-------------
+
+Home: https://github.com/richfitz/redux
+
+Package license: GPL-2.0-only
 
 Summary: A 'hiredis' wrapper that includes support for transactions, pipelining, blocking subscription, serialisation of all keys and values, 'Redis' error handling with R errors. Includes an automatically generated 'R6' interface to the full 'hiredis' API.  Generated functions are faithful to the 'hiredis' documentation while attempting to match R's argument semantics.  Serialisation must be explicitly done by the user, but both binary and text-mode serialisation is supported.
 
@@ -27,13 +38,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17888&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-redux-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17888&branchName=main">
@@ -41,10 +45,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.1</td>
+              <td>linux_64_r_base4.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17888&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-redux-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-redux-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -52,6 +56,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17888&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-redux-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-redux-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
