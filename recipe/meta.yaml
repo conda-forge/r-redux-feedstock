@@ -1,6 +1,5 @@
 {% set version = "1.1.4" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-redux
@@ -13,8 +12,7 @@ source:
   sha256: 201d7c89840f3d698fe94ec3fe4088a19c2a9dc19ee7ec300d5deeadd2606fb1
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -22,7 +20,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}sed               # [win]
     - {{ posix }}grep              # [win]
@@ -41,7 +41,6 @@ requirements:
     - libhiredis
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-r6
     - r-storr >=1.1.1
     - libhiredis
